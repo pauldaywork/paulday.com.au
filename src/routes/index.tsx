@@ -143,10 +143,10 @@ const Bg1 = () => <div className="w-full h-full absolute bottom-0" style={{ opac
 </div>
 
 const workItems = [
-  {
-    link: 'https://anthonyalbanese.com.au/', name: 'Anthony Albanese', image: '/projects/albo.jpg', icon: ArrowRightCircleIcon, description:
-      "Prime Minister of Australia's Website.",
-  },
+  // {
+  //   link: 'https://anthonyalbanese.com.au/', name: 'Anthony Albanese', image: '/projects/albo.jpg', icon: ArrowRightCircleIcon, description:
+  //     "Prime Minister of Australia's Website.",
+  // },
   {
     link: 'https://raisely.com/', name: 'Raisely', image: '/projects/raisely.jpg', icon: ArrowRightCircleIcon, description:
       'Fundraising platform for non profits. Suitable for various types of complex fundraising strategies.',
