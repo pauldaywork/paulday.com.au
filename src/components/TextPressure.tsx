@@ -43,7 +43,8 @@ const debounce = (func: (...args: any[]) => void, delay: number) => {
 const TextPressure: React.FC<TextPressureProps> = ({
   text = 'Compressa',
   fontFamily = 'Compressa VF',
-  fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
+  fontUrl = 'Compressa-MICRO-GX-Rg.woff2',
+  // fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
   width = true,
   weight = true,
   italic = true,
