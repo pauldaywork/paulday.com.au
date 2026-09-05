@@ -175,7 +175,7 @@ function App() {
     <div className="bg-black relative">
       <div className="flex flex-col relative" style={{ zIndex: 100 }}>
         <Intro />
-        <Content title="Past Work" subtitle="I worked on" items={workItems} />
+        <Content title="Work History" subtitle="I worked on" items={workItems} />
         <Content reverse title="Volunteering" subtitle="I have contributed to" items={volunteerItems} />
         <Logos />
       </div>
