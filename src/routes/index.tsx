@@ -53,9 +53,9 @@ export function Intro() {
   return (
     <div className="relative">
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-[1300px] py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-[400px] py-32 sm:py-48 lg:py-56">
           <div className="text-center">
-            <div className="h-[100px] md:h-[200px] lg:h-[300px]" style={{ position: 'relative' }}>
+            <div className="h-[90px] md:h-[90px] lg:h-[90px]" style={{ position: 'relative' }}>
               <TextPressure
                 text="Paul Day"
                 // fontFamily="Montserrat"
@@ -63,7 +63,7 @@ export function Intro() {
                 minFontSize={20}
               />
             </div>
-            <p className="text-center text-base/7 font-semibold text-indigo-400 text-shadow-lg mt-10 mb-15">I help build digital tools for progressive causes</p>
+            <p className="text-center text-base/7 font-semibold text-white text-shadow-lg/30 mt-10 mb-15">I help build digital tools for progressive causes</p>
           </div>
         </div>
       </div>
@@ -104,7 +104,7 @@ export function Content({ reverse = false, title = "", subtitle = "", items = []
 
   const text = <div className={"lg:pt-4 lg:pr-8" + (reverse && " ")}>
     <div className="lg:max-w-lg">
-      <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+      <p className="  font-[Compressa_VF] mt-2 text-4xl uppercase tracking-tight text-pretty text-white sm:text-5xl">
         {title}
       </p>
       <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">

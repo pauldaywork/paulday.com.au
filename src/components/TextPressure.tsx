@@ -50,14 +50,14 @@ const TextPressure: React.FC<TextPressureProps> = ({
   italic = true,
   alpha = false,
   flex = true,
-  stroke = false,
+  stroke = true,
   scale = false,
   textColor = '#FFFFFF',
-  strokeColor = '#FF0000',
+  strokeColor = '#FFFFFF',
   strokeWidth = 2,
   className = '',
   minFontSize = 24,
-   letterSpacing = -1
+   letterSpacing = 0
 }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -125,7 +125,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
   }, [chars.length, minFontSize, scale]);
 
   useEffect(() => {
-    const debouncedSetSize = debounce(setSize, 100);
+    const debouncedSetSize = debounce(setSize, 200);
     debouncedSetSize();
     window.addEventListener('resize', debouncedSetSize);
     return () => window.removeEventListener('resize', debouncedSetSize);
@@ -152,7 +152,7 @@ const TextPressure: React.FC<TextPressureProps> = ({
 
           const d = dist(mouseRef.current, charCenter);
 
-          const wdth = width ? Math.floor(getAttr(d, maxDist, 5, 200)) : 100;
+          const wdth = width ? Math.floor(getAttr(d, maxDist, 5, 200)) : 200;
           const wght = weight ? Math.floor(getAttr(d, maxDist, 100, 900)) : 400;
           const italVal = italic ? getAttr(d, maxDist, 0, 1).toFixed(2) : '0';
           const alphaVal = alpha ? getAttr(d, maxDist, 0, 1).toFixed(2) : '1';
