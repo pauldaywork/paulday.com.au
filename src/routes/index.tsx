@@ -53,7 +53,7 @@ export function Intro() {
   return (
     <div className="relative">
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-[400px] py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-[420px] py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <div className="h-[90px] md:h-[90px] lg:h-[90px]" style={{ position: 'relative' }}>
               <TextPressure
@@ -63,7 +63,7 @@ export function Intro() {
                 minFontSize={20}
               />
             </div>
-            <p className="text-center text-base/7 font-semibold text-white text-shadow-lg/30 mt-10 mb-15">I help build digital tools for progressive causes</p>
+            <p className="text-center text-lg text-indigo-300 text-shadow-lg/30 mt-10 mb-15">I help build digital tools for progressive causes</p>
           </div>
         </div>
       </div>
@@ -74,8 +74,8 @@ export function Intro() {
 const Image = ({ item }) => <div className="even:ml-[-200px]">
   <div className="w-[300px] mx-auto mt-[-100px]">
     <TiltedCard
-      rotateAmplitude={8}
-      scaleOnHover={1.25}
+      rotateAmplitude={2}
+      scaleOnHover={1.1}
       showTooltip={false}
       containerWidth="300px"
       // containerHeight="320px"
@@ -107,14 +107,14 @@ export function Content({ reverse = false, title = "", subtitle = "", items = []
       <p className="  font-[Compressa_VF] mt-2 text-4xl uppercase tracking-tight text-pretty text-white sm:text-5xl">
         {title}
       </p>
-      <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
+      <dl className="mt-10 max-w-xl space-y-8  text-gray-400 lg:max-w-none">
         {items.map((item) => (
           <div key={item.name} className="relative pl-9">
-            <dt className="inline font-semibold text-white">
+            <dt className="inline font-semibold text-white text-xl ">
               <a href={item.link} target="_blank"><item.icon aria-hidden="true" className="absolute top-1 left-1 size-5 text-indigo-400" />
               {item.name}</a>
-            </dt>{' '}
-            <dd className="inline">{item.description}</dd>
+            </dt>{' '} <br />
+            <dd className="text-indigo-300 mt-2 text-base text-shadow-lg/30">{item.description}</dd>
           </div>
         ))}
       </dl>
@@ -138,7 +138,7 @@ const Bg1 = () => <div className="w-full h-full absolute bottom-0" style={{ opac
     centerVignette={true}
     outerVignette={true}
     smooth={true}
-    glitchColors={['#160077ff', '#0028acff', '#5400c2ff']}
+    glitchColors={['#060020', '#001761', '#2a0061']}
   />
 </div>
 
